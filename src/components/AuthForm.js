@@ -21,7 +21,7 @@ const AuthForm = ({ token, setToken }) => {
     e.preventDefault();
     const url = isLogin ? "/login" : "/register";
     try {
-      const response = await axios.post(`http://localhost:5000${url}`, {
+      const response = await axios.post(`https://lucky-clicker-backend.vercel.app${url}`, {
         username,
         password,
       });

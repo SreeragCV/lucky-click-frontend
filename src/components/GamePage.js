@@ -17,7 +17,7 @@ const GamePage = ({ token, setToken }) => {
 
     const fetchGameData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/game-data", {
+        const response = await axios.get("https://lucky-clicker-backend.vercel.app/game-data", {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const GamePage = ({ token, setToken }) => {
   const handleClick = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/click",
+        "https://lucky-clicker-backend.vercel.app/click",
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
