@@ -1,0 +1,289 @@
+/* GAME PAGE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.game-container {
+  font-family: "Poppins", sans-serif;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.game-container.prize-effect {
+  background-color: #ffd700;
+  box-shadow: 0 0 20px #ffd700;
+}
+
+.game-title {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-score,
+.game-prizes {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.game-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.game-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.game-button:active {
+  transform: scale(0.95);
+}
+
+.logout-button {
+  background-color: #f44336;
+  margin-top: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+/* AUTH PAGE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.auth-container {
+  font-family: "Poppins", sans-serif;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-title {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.auth-submit {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-submit:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.auth-submit:active {
+  transform: translateY(0);
+}
+
+.auth-switch {
+  background: none;
+  border: none;
+  color: #4caf50;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.auth-switch:hover {
+  color: #45a049;
+}
+
+/* NAVBAR */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
+
+/* ANIMATED BACKGROUND */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #f0f8ff;
+}
+
+.animated-item {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffd700;
+  animation: float 6s ease-in-out infinite;
+}
+
+.star {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #ff69b4;
+  animation: spin 10s linear infinite;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  background-color: #00ced1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #32cd32;
+  animation: float 7s ease-in-out infinite;
+}
